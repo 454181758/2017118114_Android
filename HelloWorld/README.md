@@ -9,4 +9,5 @@
 3.Module build.gradle
 修改buildToolsVersion版本buildToolsVersion "29.0.2"
 4.修改Project Stucture中的Android Gradle Plugin Version版本至当前系统版本3.4.1
+![](https://i.imgur.com/JqIWfcL.png)
 5.Make Project测试是否能够在当前系统运行
