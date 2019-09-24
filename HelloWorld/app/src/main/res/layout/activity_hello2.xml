@@ -8,8 +8,9 @@
 
     <Button
         android:id="@+id/bt_hello1"
-        android:layout_width="wrap_content"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="hello1" />
 
     <Button
@@ -18,4 +19,11 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:text="hello2" />
+
+    <Button
+        android:id="@+id/bt_hello3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="hello3" />
 </LinearLayout>

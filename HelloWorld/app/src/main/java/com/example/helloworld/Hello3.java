@@ -7,16 +7,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class Hello1 extends AppCompatActivity implements View.OnClickListener{
-    private static final String TAG = "Hello1";
+public class Hello3 extends AppCompatActivity implements View.OnClickListener{
+    private final static String TAG = "Hell3";
 
     @Override
-    protected void onCreate (Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.hello_world_layout);
-        setTitle("Hello1");
-        Log.d(TAG, "onCreate execute");
-        settupClicks();
+        setContentView(R.layout.activity_hello3);
+        setTitle("Hello3");
+        settpButtions();
     }
 
     @Override
@@ -38,16 +37,15 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
-        private void settupClicks () {
-            Button b;
-            b=(Button)findViewById(R.id.bt_hello1);
-            b.setOnClickListener(this);
-            b=(Button)findViewById(R.id.bt_hello2);
-            b.setOnClickListener(this);
-            b=(Button)findViewById(R.id.bt_hello3);
-            b.setOnClickListener(this);
+    private void settpButtions(){
+        Button b;
+        b=(Button)findViewById(R.id.bt_hello1);
+        b.setOnClickListener(this);
+        b=(Button)findViewById(R.id.bt_hello2);
+        b.setOnClickListener(this);
+        b=(Button)findViewById(R.id.bt_hello3);
+        b.setOnClickListener(this);
     }
-
 
     @Override
     protected void onStart () {
