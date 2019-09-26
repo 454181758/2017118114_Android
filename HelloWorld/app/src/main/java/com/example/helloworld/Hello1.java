@@ -9,13 +9,18 @@ import android.widget.Button;
 
 public class Hello1 extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG = "Hello1";
+    private static int objCount = 0;
+    private int mObjCount;
 
+    
     @Override
     protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hello_world_layout);
         setTitle("Hello1");
-        Log.d(TAG, "onCreate execute");
+        objCount++;
+        mObjCount=objCount;
+        Log.d(TAG, mObjCount+"-onCreate");
         settupClicks();
     }
 
@@ -52,37 +57,37 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onStart () {
         super.onStart();
-        Log.d(TAG, "onStart");
+        Log.d(TAG, mObjCount+"-onStart");
     }
 
     @Override
     protected void onResume () {
         super.onResume();
-        Log.d(TAG, "onResume");
+        Log.d(TAG, mObjCount+"-onResume");
     }
 
     @Override
     protected void onPause () {
         super.onPause();
-        Log.d(TAG, "onPause");
+        Log.d(TAG, mObjCount+"-onPause");
     }
 
     @Override
     protected void onStop () {
         super.onStop();
-        Log.d(TAG, "onStop");
+        Log.d(TAG, mObjCount+"-onStop");
     }
 
     @Override
     protected void onDestroy () {
         super.onDestroy();
-        Log.d(TAG, "onDestroy");
+        Log.d(TAG, mObjCount+"-onDestroy");
     }
 
     @Override
     protected void onRestart () {
         super.onRestart();
-        Log.d(TAG, "onRestart");
+        Log.d(TAG, mObjCount+"-onRestart");
 
     }
 }
