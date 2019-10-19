@@ -1,6 +1,7 @@
 package com.example.helloworld;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -38,7 +39,24 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener{
         }
         if(v.getId()==R.id.bt_hello3){
             Intent intent;
+            //String string1="com.examople.helloworld.intent.action.H3";
+            //intent = new Intent(string1);
             intent=new Intent(this,Hello3.class);
+            startActivity(intent);
+        }
+        if(v.getId()==R.id.browser) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("http://"));
+            startActivity(intent);
+        }
+        if(v.getId()==R.id.phone) {
+            Intent intent = new Intent(Intent.ACTION_DIAL);
+            intent.setData(Uri.parse("tel:"));
+            startActivity(intent);
+        }
+        if(v.getId()==R.id.map) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("geo:"));
             startActivity(intent);
         }
     }
@@ -50,6 +68,12 @@ public class Hello1 extends AppCompatActivity implements View.OnClickListener{
             b=(Button)findViewById(R.id.bt_hello2);
             b.setOnClickListener(this);
             b=(Button)findViewById(R.id.bt_hello3);
+            b.setOnClickListener(this);
+            b=(Button)findViewById(R.id.browser);
+            b.setOnClickListener(this);
+            b=(Button)findViewById(R.id.phone);
+            b.setOnClickListener(this);
+            b=(Button)findViewById(R.id.map);
             b.setOnClickListener(this);
     }
 
