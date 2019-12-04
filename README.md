@@ -1,5 +1,5 @@
 项目Halloworld  
-
+- 
 
 1. 作业一：尝试连接Android studio、Source tree和Git Hub。2019.9.10  
 
@@ -13,4 +13,16 @@
 4. 作业四：修改活动启动模式standard、singleTop、singTask、singInstance观察活动生命周期。2019.9.26  
 
 
-5. 作业五：添加隐式方式跳转浏览器、地图、电话。2019.10.19
+5. 作业五：添加隐式方式跳转浏览器、地图、电话。2019.10.19  
+
+项目ThreadTest  
+- 
+6. 作业六：创建多线程运行程序。2019.12.3
+
+
+项目ServiceTest
+- 
+
+7. 作业七：创建服务。2019.12.4 
+
+
